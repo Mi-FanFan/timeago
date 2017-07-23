@@ -44,7 +44,7 @@ This means that you can pass `className`, `styles`, `id`, `title`, `aria-label`,
 
 
 
-##Rules 
+## Rules 
 
 1. 1分钟之内，显示： 刚刚
 2. 一小时内，显示： xx分钟前
