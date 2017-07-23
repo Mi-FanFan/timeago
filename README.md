@@ -1,6 +1,5 @@
 A simple time-ago component for ReactJs.
 
-```
 ES6 imports 
 ```js
 import TimeAgo from 'mff-timeago'
@@ -44,13 +43,23 @@ As of v2.0 you can pass in any props. Any props not used by React-TimeAgo will b
 This means that you can pass `className`, `styles`, `id`, `title`, `aria-label`, event handlers or anything else you want.
 
 
+
+##Rules 
+
+1. 1分钟之内，显示： 刚刚
+2. 一小时内，显示： xx分钟前
+3. 小于24小时，显示： xx小时前
+4. 间隔超过24小时，显示：昨天xx：xx
+5. 间隔超过48小时，显示：xx月xx日 xx：xx
+6. 间隔超过一年，显示：xxxx年xx月xx日 xx：xx
+
 ## SemVer
 
-React-TimeAgo follows SemVer strictly.
+TimeAgo follows SemVer strictly.
 
 ## Changelog
 
 
 #### v1.0.0
 
-* init component
+* Initial component
