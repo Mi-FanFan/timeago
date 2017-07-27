@@ -38,13 +38,13 @@ it('23 hours ago', () => {
   expect(wrapper.text()).toEqual('23小时前')
 })
 
-/*
+
 it('1 day ago', t => {
   const wrapper = shallow(<TimeAgo date={Date.now() - 1000 * 60 * 60 * 24} />)
   t.is(wrapper.text(), '1 day ago')
 })
 
 it('1 week ago', t => {
-  const wrapper = shallow(<TimeAgo date={Date.now() - 1000 * 60 * 60 * 24 * 7} />)
+  const wrapper = shallow(<TimeAgo date={Date.now() - 1000 * 60 * 60 * 24 * 260} />)
   t.is(wrapper.text(), '1 week ago')
-})*/
+})
