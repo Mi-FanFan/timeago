@@ -1,6 +1,6 @@
 {
   "name": "mff-timeago",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A simple Time-Ago component for ReactJs",
   "main": "lib/index.js",
   "scripts": {
@@ -55,7 +55,9 @@
     "react-test-renderer": "^15.6.1",
     "rimraf": "^2.6.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.18.1"
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
