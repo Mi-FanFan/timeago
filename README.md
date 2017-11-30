@@ -49,9 +49,9 @@ This means that you can pass `className`, `styles`, `id`, `title`, `aria-label`,
 1. 1分钟之内，显示： 刚刚
 2. 一小时内，显示： xx分钟前
 3. 小于24小时，显示： xx小时前
-4. 间隔超过24小时，显示：昨天xx：xx
-5. 间隔超过48小时，显示：xx月xx日 xx：xx
-6. 间隔超过一年，显示：xxxx年xx月xx日 xx：xx
+4. 间隔超过24小时，显示：昨天xx:xx
+5. 间隔超过48小时，显示：xx-xx xx:xx
+6. 间隔超过一年，显示：xxxx-xx-xx xx:xx
 
 ## SemVer
 
