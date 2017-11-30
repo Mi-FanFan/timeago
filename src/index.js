@@ -148,9 +148,9 @@ export default class TimeAgo extends Component<DefaultProps, Props, void> {
           ? `${Math.round(seconds / HOUR)}小时前`
           : seconds < DAY * 2
             ? `昨天${hour}:${minutes}`
-            : seconds < YEAR
-              ? `${year === new Date(now).getFullYear() ? '' : (year+'-')}${months}-${days} ${hour}:${minutes}`
-              : `${year}-${months}-${days} ${hour}:${minutes}`
+            : seconds < YEAR && year === new Date(now).getFullYear()
+              ? `${months}-${days} ${hour}:${minutes}` 
+              : `${year}-${months}-${days}`
 
     const passDownTitle = typeof title === 'undefined'
       ? (typeof date === 'string'
