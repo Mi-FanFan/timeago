@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import moment from 'moment'
 
 import TimeAgo from '../src'
 
@@ -39,12 +40,12 @@ it('23 hours ago', () => {
 })
 
 
-it('1 day ago', t => {
+it('>24h昨天', () => {
   const wrapper = shallow(<TimeAgo date={Date.now() - 1000 * 60 * 60 * 24} />)
-  t.is(wrapper.text(), '1 day ago')
+  expect(wrapper.text()).toEqual('昨天' + moment().subtract(1, 'days').format('HH:mm'))
 })
 
-it('1 week ago', t => {
+it('1 week ago', () => {
   const wrapper = shallow(<TimeAgo date={Date.now() - 1000 * 60 * 60 * 24 * 260} />)
-  t.is(wrapper.text(), '1 week ago')
+  expect(wrapper.text()).toEqual(moment().subtract(260, 'days').format('MM-DD HH:mm'))
 })
